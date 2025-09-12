@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/bottom_home"
         android:title="Home"
-        android:icon=""/>
+        android:icon="@drawable/ichome"/>
 
     <item android:id="@+id/bottom_profile"
         android:title="Perfil"
@@ -15,7 +15,7 @@
         android:title="Carrinho"
         android:icon="@drawable/iccart"/>
 
-    <item android:id="bottom_menu"
+    <item android:id="@+id/bottom_menu"
         android:title="Menu"
         android:icon="@drawable/icprofile"/>
 
