@@ -62,12 +62,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_prime -> openFragment(PrimeFragment())
-            R.id.nav_fashion -> openFragment(FashionFragment())
-            R.id.nav_eletronics -> openFragment(ElectronicsFragment())
-            R.id.nav_Beauty -> Toast.makeText(this,"Beleza", Toast.LENGTH_SHORT).show()
-            R.id.nav_Food -> Toast.makeText(this,"Alimentos", Toast.LENGTH_SHORT).show()
-            R.id.nav_furniture -> Toast.makeText(this,"Móveis", Toast.LENGTH_SHORT).show()
+            R.id.nav_livro -> openFragment(PrimeFragment())
+            R.id.nav_games-> openFragment(FashionFragment())
+            R.id.nav_ferramentas -> openFragment(ElectronicsFragment())
+            R.id.nav_pets -> Toast.makeText(this,"Pets", Toast.LENGTH_SHORT).show()
+            R.id.nav_jardimplantas -> Toast.makeText(this,"Jardim e Plantas", Toast.LENGTH_SHORT).show()
+            R.id.nav_automotivo -> Toast.makeText(this,"Automotivo", Toast.LENGTH_SHORT).show()
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true

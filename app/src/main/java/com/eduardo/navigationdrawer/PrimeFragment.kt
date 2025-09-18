@@ -34,7 +34,7 @@ class PrimeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_prime, container, false)
+        return inflater.inflate(R.layout.fragment_livro, container, false)
     }
 
     companion object {

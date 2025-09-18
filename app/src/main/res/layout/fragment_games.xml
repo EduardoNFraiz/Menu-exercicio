@@ -3,22 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".FashionFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home"
+        android:text="Games"
         android:gravity="center"
         android:textColor="@color/blue"
         android:textSize="36dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Eduardo Neumam Fraizleben"
-        android:gravity="center_horizontal"
-        android:textColor="@color/white"
-        android:textSize="20dp"/>
 
 </FrameLayout>
