@@ -37,15 +37,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId){
-                R.id.bottom_home -> openFragment(HomeFragment())
-                R.id.bottom_cart -> openFragment(CartFragment())
-                R.id.bottom_profile -> openFragment(ProfileFragment())
-                R.id.bottom_menu -> openFragment(MenuFragment())
+                R.id.bottom_home -> openFragment(InicioFragment())
+                R.id.bottom_profile -> openFragment(BuscarFragment())
+                R.id.bottom_cart -> openFragment(FavoritosFragment())
+                R.id.bottom_menu -> openFragment(PedidosFragment())
             }
             true
         }
         fragmentManager = supportFragmentManager
-        openFragment(HomeFragment())
+        openFragment(InicioFragment())
 
         binding.fab.setOnClickListener {
             Toast.makeText(this, "Categorias", Toast.LENGTH_SHORT).show()
@@ -62,9 +62,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_livro -> openFragment(PrimeFragment())
-            R.id.nav_games-> openFragment(FashionFragment())
-            R.id.nav_ferramentas -> openFragment(ElectronicsFragment())
+            R.id.nav_livro -> openFragment(LivroFragment())
+            R.id.nav_games-> openFragment(GamesFragment())
+            R.id.nav_ferramentas -> openFragment(FerramentasFragment())
             R.id.nav_pets -> Toast.makeText(this,"Pets", Toast.LENGTH_SHORT).show()
             R.id.nav_jardimplantas -> Toast.makeText(this,"Jardim e Plantas", Toast.LENGTH_SHORT).show()
             R.id.nav_automotivo -> Toast.makeText(this,"Automotivo", Toast.LENGTH_SHORT).show()
